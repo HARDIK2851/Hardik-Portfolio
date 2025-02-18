@@ -1,0 +1,26 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#navbar li a{
+    text-decoration: none;
+}
+
+#navbar {
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#home, #experience, #education, #skills{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    background-color: black;
+}
+
