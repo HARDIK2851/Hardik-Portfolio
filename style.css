@@ -1,16 +1,29 @@
-body{
+*{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 #navbar li a{
     text-decoration: none;
 }
 
+#logo{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
 #navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: black;
 }
 
 #nav-links{
@@ -25,7 +38,7 @@ body{
 
 #nav-links a {
     text-decoration: none;
-    color: rgb(23, 86, 244);
+    color: rgb(255, 255, 255);
     padding: 12px 15px;
     display: block;
     transition: 0.3s;
@@ -44,9 +57,10 @@ main {
 
 section {
     width: 80%; 
+    height: 100vh;
     text-align: center; 
     padding: 50px 0; 
-    margin: 5px;
+    margin: 1px;
     background-color: black;
 }
 
