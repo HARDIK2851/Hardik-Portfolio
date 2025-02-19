@@ -9,17 +9,43 @@ body{
 
 #navbar {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-ul{
+#nav-links{
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-#home, #experience, #education, #skills{
-    width: 200px;
-    height: 200px;
+#nav-links li {
+    position: relative;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: rgb(23, 86, 244);
+    padding: 12px 15px;
+    display: block;
+    transition: 0.3s;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Stacks sections vertically */
+    align-items: center;    /* Centers sections horizontally */
+    justify-content: center; /* Centers sections vertically (optional) */
+    width: 100%;
+    max-width: 1200px; /* Adjust width as needed */
+    margin: auto; /* Centers the container itself */
+    padding: 20px;
+}
+
+section {
+    width: 80%; 
+    text-align: center; 
+    padding: 50px 0; 
     margin: 5px;
     background-color: black;
 }
