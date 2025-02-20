@@ -99,6 +99,7 @@ section.active {
 #home p {
     font-size: 2rem;
     margin: 0;
+    text-align: justify;
 }
 
 #home img {
@@ -130,10 +131,12 @@ footer {
     width: 30px;  
     height: 30px;
     background: #fff;
-    border-radius: 45%;
+    border-radius: 50%;
     transition: transform 0.3s ease; 
 } 
 
 .footer-link:hover .footer-icon {
     transform: scale(1.1);  
+    background: #0767cd;
+
 }
