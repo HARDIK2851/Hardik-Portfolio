@@ -125,7 +125,7 @@ section.active {
 
 .skills-box {
     width: 48%;
-    background: rgba(0, 0, 30, 0.7); /* Dark blue translucent */
+    background: rgba(0, 0, 30, 0.7);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -134,24 +134,23 @@ section.active {
 
 .skills-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 255, 0.4); /* Blue glow */
+    box-shadow: 0 6px 15px rgba(0, 0, 255, 0.4);
 }
 
 #skills h2 {
     font-size: 2.2rem;
-    color: #4aa8ff; /* Bright blue */
+    color: #4aa8ff; 
     margin-bottom: 30px;
 }
 
 #skills h3 {
     font-size: 1.5rem;
-    color: #66ccff; /* Lighter blue */
+    color: #66ccff; 
     border-bottom: 2px solid #66ccff;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
 
-/* Only applies to the ul and li inside the skills section */
 #skills ul {
     list-style: none;
     padding: 0;
@@ -164,7 +163,125 @@ section.active {
 }
 
 #skills ul li:hover {
-    color: #4aa8ff; /* Blue highlight */
+    color: #4aa8ff; 
+}
+
+#experience {
+    text-align: center;
+    color: #fff;
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.experience-box {
+    width: 100%;
+    background: rgba(0, 0, 30, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 255, 0.4); 
+}
+
+.experience-box h3 {
+    font-size: 1.5rem;
+    color: #4aa8ff; 
+    margin-bottom: 5px;
+}
+
+.experience-duration {
+    font-size: 1.1rem;
+    color: #66ccff; 
+    font-weight: bold;
+}
+
+.experience-company {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#experience ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#experience ul li {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+#experience ul li:hover {
+    color: #4aa8ff;
+}
+
+#education {
+    text-align: center;
+    color: #fff;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.education-box {
+    width: 100%;
+    background: rgba(0, 0, 30, 0.8); 
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 255, 0.4); 
+}
+
+.education-box h3 {
+    font-size: 1.5rem;
+    color: #4aa8ff; 
+    margin-bottom: 5px;
+}
+
+.education-duration {
+    font-size: 1.1rem;
+    color: #66ccff; 
+    font-weight: bold;
+}
+
+.education-institution {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.education-details {
+    font-size: 1rem;
+    opacity: 0.9;
+    transition: color 0.3s ease;
+}
+
+.education-details:hover {
+    color: #4aa8ff; 
 }
 
 
