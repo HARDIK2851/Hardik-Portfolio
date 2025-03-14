@@ -62,7 +62,7 @@ main {
 
 section {
     width: 50%; 
-    height: 100vh;
+    height: fit-content;
     padding: 50px 50px; 
     margin: 1px;
     background: rgba(30, 30, 30, 0.8); 
@@ -152,6 +152,18 @@ section.active {
 }
 
 #skills h2 {
+    font-size: 2.2rem;
+    color: #4aa8ff; 
+    margin-bottom: 30px;
+}
+
+#experience h2 {
+    font-size: 2.2rem;
+    color: #4aa8ff; 
+    margin-bottom: 30px;
+}
+
+#education h2 {
     font-size: 2.2rem;
     color: #4aa8ff; 
     margin-bottom: 30px;
