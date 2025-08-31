@@ -5,8 +5,8 @@
 }
 
 body{
-    background-color: #000;
-    color: #fff;
+    background-color: #f9f9f9; /* light background */
+    color: #000; /* black text */
 }
 
 #navbar li a{
@@ -14,7 +14,7 @@ body{
 }
 
 #logo{
-    color: white;
+    color: #000;
     font-size: 24px;
     font-weight: bold;
 }
@@ -28,7 +28,8 @@ body{
     top: 0;
     left: 0;
     z-index: 1000;
-    background-color: black;
+    background-color: #fff; /* white navbar */
+    border-bottom: 1px solid #ddd;
 }
 
 #nav-links{
@@ -43,7 +44,7 @@ body{
 
 #nav-links a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #000; 
     padding: 12px 15px;
     display: block;
     transition: 0.3s;
@@ -65,10 +66,10 @@ section {
     height: fit-content;
     padding: 50px 50px; 
     margin: 1px;
-    background: rgba(30, 30, 30, 0.8); 
+    background: #fff; 
     border-radius: 30px;
     backdrop-filter: blur(10px); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     opacity: 0;
     transform: translateX(-100%); 
     transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
@@ -84,9 +85,9 @@ section.active {
     align-items: center;
     justify-content: space-between; 
     height: 100vh; 
-    background: rgba(0, 0, 40, 0.8); 
+    background: #f0f8ff; /* very light blue */
     border-radius: 20px;
-    color: #fff; 
+    color: #000; 
 }
 
 #home-container div {
@@ -98,14 +99,14 @@ section.active {
 #home-container h2 {
     font-size: 3rem; 
     margin: 0;
-    color: #4aa8ff; 
+    color: #1e90ff; /* light blue */
 }
 
 #home-containere p {
     font-size: 1.5rem;
     margin-top: 10px;
     line-height: 1.6;
-    color: #ccc; 
+    color: #333; 
     text-align: justify;
 }
 
@@ -114,7 +115,7 @@ section.active {
     height: 100%; 
     object-fit: contain;
     border-radius: 10px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 255, 0.2); 
+    box-shadow: 0 4px 20px rgba(30, 144, 255, 0.2); 
     transition: transform 0.3s ease-in-out;
 }
 
@@ -125,7 +126,7 @@ section.active {
 
 #skills {
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
 .skills-container {
@@ -139,40 +140,40 @@ section.active {
 
 .skills-box {
     width: 48%;
-    background: rgba(0, 0, 30, 0.7);
+    background: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 255, 0.4);
+    box-shadow: 0 6px 15px rgba(30,144,255,0.3);
 }
 
 #skills h2 {
     font-size: 2.2rem;
-    color: #4aa8ff; 
+    color: #1e90ff; 
     margin-bottom: 30px;
 }
 
 #experience h2 {
     font-size: 2.2rem;
-    color: #4aa8ff; 
+    color: #1e90ff; 
     margin-bottom: 30px;
 }
 
 #education h2 {
     font-size: 2.2rem;
-    color: #4aa8ff; 
+    color: #1e90ff; 
     margin-bottom: 30px;
 }
 
 #skills h3 {
     font-size: 1.5rem;
-    color: #66ccff; 
-    border-bottom: 2px solid #66ccff;
+    color: #1e90ff; 
+    border-bottom: 2px solid #1e90ff;
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
@@ -186,15 +187,16 @@ section.active {
     font-size: 1.1rem;
     padding: 8px 0;
     transition: color 0.3s ease;
+    color: #333;
 }
 
 #skills ul li:hover {
-    color: #4aa8ff; 
+    color: #1e90ff; 
 }
 
 #experience {
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
 .experience-container {
@@ -208,27 +210,27 @@ section.active {
 
 .experience-box {
     width: 100%;
-    background: rgba(0, 0, 30, 0.8);
+    background: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 255, 0.4); 
+    box-shadow: 0 6px 15px rgba(30,144,255,0.3); 
 }
 
 .experience-box h3 {
     font-size: 1.5rem;
-    color: #4aa8ff; 
+    color: #1e90ff; 
     margin-bottom: 5px;
 }
 
 .experience-duration {
     font-size: 1.1rem;
-    color: #66ccff; 
+    color: #1e90ff; 
     font-weight: bold;
 }
 
@@ -236,6 +238,7 @@ section.active {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #000;
 }
 
 #experience ul {
@@ -248,15 +251,16 @@ section.active {
     font-size: 1.1rem;
     padding: 8px 0;
     transition: color 0.3s ease;
+    color: #333;
 }
 
 #experience ul li:hover {
-    color: #4aa8ff;
+    color: #1e90ff;
 }
 
 #education {
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
 .education-container {
@@ -270,27 +274,27 @@ section.active {
 
 .education-box {
     width: 100%;
-    background: rgba(0, 0, 30, 0.8); 
+    background: #fff; 
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .education-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 255, 0.4); 
+    box-shadow: 0 6px 15px rgba(30,144,255,0.3); 
 }
 
 .education-box h3 {
     font-size: 1.5rem;
-    color: #4aa8ff; 
+    color: #1e90ff; 
     margin-bottom: 5px;
 }
 
 .education-duration {
     font-size: 1.1rem;
-    color: #66ccff; 
+    color: #1e90ff; 
     font-weight: bold;
 }
 
@@ -298,26 +302,29 @@ section.active {
     font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #000;
 }
 
 .education-details {
     font-size: 1rem;
     opacity: 0.9;
     transition: color 0.3s ease;
+    color: #333;
 }
 
 .education-details:hover {
-    color: #4aa8ff; 
+    color: #1e90ff; 
 }
 
 
 footer {
-    background-color: #121212;  
+    background-color: #fff;  
     padding: 20px 0;  
     text-align: center;  
-    color: #fff;  
+    color: #000;  
     font-size: 16px;  
     font-family: Arial, sans-serif;  
+    border-top: 1px solid #ddd;
 }
 
 .footer-content {
@@ -327,18 +334,18 @@ footer {
 .footer-link {
     text-decoration: none;  
     padding: 0 20px;  
+    color: #000;
 }
 
 .footer-icon {
     width: 30px;  
     height: 30px;
-    background: #fff;
+    background: #1e90ff;
     border-radius: 50%;
     transition: transform 0.3s ease; 
 } 
 
 .footer-link:hover .footer-icon {
     transform: scale(1.1);  
-    background: #0767cd;
-
+    background: #000;
 }
