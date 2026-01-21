@@ -349,3 +349,113 @@ footer {
     transform: scale(1.1);  
     background: #000;
 }
+
+/* =========================
+   Mobile Responsive Styles
+   ========================= */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    #navbar {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    #nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav-links a {
+        padding: 10px;
+        border-top: 1px solid #eee;
+    }
+
+    /* Main layout */
+    main {
+        width: 100%;
+        padding: 10px;
+    }
+
+    section {
+        width: 100%;
+        padding: 30px 20px;
+        border-radius: 20px;
+        transform: translateX(0); /* prevent awkward slide on small screens */
+        opacity: 1;
+    }
+
+    /* Home section */
+    #home-container {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #home-container div {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #home-container h2 {
+        font-size: 2.2rem;
+    }
+
+    #home-container img {
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Skills */
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skills-box {
+        width: 100%;
+    }
+
+    /* Experience & Education */
+    .experience-box,
+    .education-box {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-link {
+        padding: 0 10px;
+    }
+
+    .footer-icon {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Keep navbar horizontal */
+    #navbar {
+        flex-direction: row;
+        padding: 10px 15px;
+    }
+
+    #nav-links {
+        flex-direction: row;
+        width: auto;
+    }
+
+    #nav-links li {
+        margin: 0;
+    }
+
+    #nav-links a {
+        padding: 10px 12px;
+        border-top: none;
+        font-size: 14px;
+    }
+}
