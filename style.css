@@ -1,47 +1,81 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: 'JetBrains Mono', monospace; */
+font-family: 'Inter', sans-serif;}
+
+code, .mono {
+  font-family: 'JetBrains Mono', monospace;
 }
 
-html, body{
-    margin: 0;
-    scroll-behavior: smooth;
-    scroll-snap-stop: always;
+html,
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-snap-stop: always;
+  max-height: 100%;
+  background:
+    url("imgs/portfolio-files-bg.jpg");
+
+  background-blend-mode: overlay;
+    background-attachment: fixed;
+  background-size: cover;
+    inset: 0;
+  z-index: -1;
+
+
 }
 
-header{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    height: 50px;
-    position:sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: white;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1em;
+  align-items: center;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  color: #F3F4F6;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: smooth;
+body {
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
 }
 
-#navbar-ul{
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-}
-
-.navbar-ul-li{
-   padding-right: 10px;
+#navbar-ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
 }
 
 .navbar-ul-li a {
-    text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.25s ease;
+  font-size: 1em;
+  padding-right: 20px;
 }
 
-.main-content{
-    background-color: blue;
-    min-height: 100vh;
-    border-bottom: 2px solid white;
+.navbar-ul-li a:hover {
+  color: #ff9a02;
+    font-size: 1.05em;
+
+}
+
+.navbar-ul-li a:active{
+    color: #ff9a02;
+    font-size: 1.05em;
+}
+
+.main-content {
+  /* background-color: blue; */
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  /* -webkit-backdrop-filter: blur(10px); */
+  min-height: 100vh;
+  border-bottom: 1px solid white;
 }
